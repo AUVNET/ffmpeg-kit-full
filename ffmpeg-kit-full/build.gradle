@@ -1,13 +1,9 @@
 apply plugin: 'com.android.library'
+apply plugin: 'maven-publish'
 
 android {
     namespace 'com.auvnet.ffmpeg'
     compileSdkVersion 34
-
-    lintOptions {
-        checkReleaseBuilds false
-        abortOnError false
-    }
 
     defaultConfig {
         minSdkVersion 21
@@ -22,20 +18,38 @@ android {
             minifyEnabled false
         }
     }
-}
 
-repositories {
-    flatDir {
-        dirs 'libs'
+    // Include native libraries (.so files)
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['src/main/jniLibs']
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
     }
 }
 
 dependencies {
-    api(name: 'ffmpeg-kit-full', ext: 'aar')
+    implementation files('libs/ffmpeg-kit-full.jar')
 }
 
-gradle.projectsEvaluated {
-    tasks.matching { it.name.startsWith("lint") || it.name.startsWith("test") }.configureEach {
-        enabled = false
+tasks.matching { it.name.startsWith("lint") || it.name.startsWith("test") }.configureEach {
+    enabled = false
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                groupId = 'com.github.AUVNET'
+                artifactId = 'ffmpeg-kit-full'
+                version = 'v1.6'
+
+                artifact("$buildDir/outputs/aar/ffmpeg-kit-full-release.aar")
+            }
+        }
     }
 }

@@ -6,12 +6,5 @@ pluginManagement {
     }
 }
 
-dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.PREFER_PROJECT) // ✅ FIXED
-    repositories {
-        google()
-        mavenCentral()
-    }
-}
-
+rootProject.name = 'ffmpeg-kit-full'
 include ':ffmpeg-kit-full'

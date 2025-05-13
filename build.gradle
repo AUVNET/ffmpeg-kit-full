@@ -20,21 +20,7 @@ allprojects {
     }
 }
 
-afterEvaluate {
-    publishing {
-        publications {
-            release(MavenPublication) {
-                groupId = 'com.github.AUVNET'
-                artifactId = 'ffmpeg-kit-full'
-                version = 'v1.5'
-
-                println("Artifact path: ${rootDir}/ffmpeg-kit-full/build/outputs/aar/ffmpeg-kit-full-release.aar")
-                artifact("ffmpeg-kit-full/build/outputs/aar/ffmpeg-kit-full-release.aar")
-            }
-        }
-    }
-}
-
+// Optional: Disable lint and test globally (for JitPack safety)
 gradle.projectsEvaluated {
     tasks.matching { it.name.startsWith("lint") || it.name.startsWith("test") }.configureEach {
         enabled = false

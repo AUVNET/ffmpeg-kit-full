@@ -1,0 +1,16 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/ahmedroyale/Desktop/WIKI-WIKI/ffmpeg-kit-full/ffmpeg-kit-full/build/intermediates/tmp/ProcessLibraryManifest/release/tempAndroidManifest9322955273488079393.xml:2:13-83
+INJECTED from /Users/ahmedroyale/Desktop/WIKI-WIKI/ffmpeg-kit-full/ffmpeg-kit-full/build/intermediates/tmp/ProcessLibraryManifest/release/tempAndroidManifest9322955273488079393.xml:2:13-83
+	package
+		INJECTED from /Users/ahmedroyale/Desktop/WIKI-WIKI/ffmpeg-kit-full/ffmpeg-kit-full/build/intermediates/tmp/ProcessLibraryManifest/release/tempAndroidManifest9322955273488079393.xml
+	xmlns:android
+		ADDED from /Users/ahmedroyale/Desktop/WIKI-WIKI/ffmpeg-kit-full/ffmpeg-kit-full/build/intermediates/tmp/ProcessLibraryManifest/release/tempAndroidManifest9322955273488079393.xml:2:23-81
+uses-sdk
+INJECTED from /Users/ahmedroyale/Desktop/WIKI-WIKI/ffmpeg-kit-full/ffmpeg-kit-full/build/intermediates/tmp/ProcessLibraryManifest/release/tempAndroidManifest9322955273488079393.xml reason: use-sdk injection requested
+INJECTED from /Users/ahmedroyale/Desktop/WIKI-WIKI/ffmpeg-kit-full/ffmpeg-kit-full/build/intermediates/tmp/ProcessLibraryManifest/release/tempAndroidManifest9322955273488079393.xml
+INJECTED from /Users/ahmedroyale/Desktop/WIKI-WIKI/ffmpeg-kit-full/ffmpeg-kit-full/build/intermediates/tmp/ProcessLibraryManifest/release/tempAndroidManifest9322955273488079393.xml
+	android:targetSdkVersion
+		INJECTED from /Users/ahmedroyale/Desktop/WIKI-WIKI/ffmpeg-kit-full/ffmpeg-kit-full/build/intermediates/tmp/ProcessLibraryManifest/release/tempAndroidManifest9322955273488079393.xml
+	android:minSdkVersion
+		INJECTED from /Users/ahmedroyale/Desktop/WIKI-WIKI/ffmpeg-kit-full/ffmpeg-kit-full/build/intermediates/tmp/ProcessLibraryManifest/release/tempAndroidManifest9322955273488079393.xml

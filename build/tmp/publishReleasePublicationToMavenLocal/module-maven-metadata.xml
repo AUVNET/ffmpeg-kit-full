@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.github.AUVNET</groupId>
+  <artifactId>ffmpeg-kit-full</artifactId>
+  <versioning>
+    <latest>v1.5</latest>
+    <release>v1.5</release>
+    <versions>
+      <version>v1.3</version>
+      <version>v1.5</version>
+    </versions>
+    <lastUpdated>20250513113148</lastUpdated>
+  </versioning>
+</metadata>

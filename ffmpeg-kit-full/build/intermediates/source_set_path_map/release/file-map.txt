@@ -1,0 +1,7 @@
+com.auvnet.ffmpeg.ffmpeg-kit-full-pngs-0 /Users/ahmedroyale/Desktop/WIKI-WIKI/ffmpeg-kit-full/ffmpeg-kit-full/build/generated/res/pngs/release
+com.auvnet.ffmpeg.ffmpeg-kit-full-resValues-1 /Users/ahmedroyale/Desktop/WIKI-WIKI/ffmpeg-kit-full/ffmpeg-kit-full/build/generated/res/resValues/release
+com.auvnet.ffmpeg.ffmpeg-kit-full-mergeReleaseResources-2 /Users/ahmedroyale/Desktop/WIKI-WIKI/ffmpeg-kit-full/ffmpeg-kit-full/build/intermediates/incremental/release/mergeReleaseResources/merged.dir
+com.auvnet.ffmpeg.ffmpeg-kit-full-mergeReleaseResources-3 /Users/ahmedroyale/Desktop/WIKI-WIKI/ffmpeg-kit-full/ffmpeg-kit-full/build/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+com.auvnet.ffmpeg.ffmpeg-kit-full-merged_res-4 /Users/ahmedroyale/Desktop/WIKI-WIKI/ffmpeg-kit-full/ffmpeg-kit-full/build/intermediates/merged_res/release
+com.auvnet.ffmpeg.ffmpeg-kit-full-main-5 /Users/ahmedroyale/Desktop/WIKI-WIKI/ffmpeg-kit-full/ffmpeg-kit-full/src/main/res
+com.auvnet.ffmpeg.ffmpeg-kit-full-release-6 /Users/ahmedroyale/Desktop/WIKI-WIKI/ffmpeg-kit-full/ffmpeg-kit-full/src/release/res
