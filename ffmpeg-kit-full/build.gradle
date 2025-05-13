@@ -5,6 +5,11 @@ android {
     namespace 'com.auvnet.ffmpeg'
     compileSdkVersion 34
 
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
     defaultConfig {
         minSdkVersion 21
         targetSdkVersion 34
@@ -30,7 +35,6 @@ dependencies {
     api(name: 'ffmpeg-kit-full', ext: 'aar')
 }
 
-// ✅ Publishing block for JitPack
 afterEvaluate {
     publishing {
         publications {
@@ -38,15 +42,8 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.AUVNET'
                 artifactId = 'ffmpeg-kit-full'
-                version = 'v1.1'
+                version = 'v1.3'
             }
         }
-    }
-}
-
-// ✅ Disable lint/test tasks to avoid JitPack errors
-tasks.whenTaskAdded { task ->
-    if (task.name.startsWith("lint") || task.name.startsWith("test")) {
-        task.enabled = false
     }
 }
