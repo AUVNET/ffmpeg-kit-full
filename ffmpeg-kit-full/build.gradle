@@ -3,11 +3,11 @@ apply plugin: 'maven-publish'
 
 android {
     namespace 'com.auvnet.ffmpeg'
-    compileSdkVersion 34
+    compileSdkVersion 30
 
     defaultConfig {
         minSdkVersion 21
-        targetSdkVersion 34
+        targetSdkVersion 30
         versionCode 1
         versionName "1.0"
         consumerProguardFiles 'consumer-rules.pro'
@@ -41,13 +41,16 @@ tasks.matching { it.name.startsWith("lint") || it.name.startsWith("test") }.conf
 }
 
 afterEvaluate {
+    tasks.matching { it.name.startsWith("lint") || it.name.startsWith("test") }.configureEach {
+        enabled = false
+    }
+
     publishing {
         publications {
             release(MavenPublication) {
                 groupId = 'com.github.AUVNET'
                 artifactId = 'ffmpeg-kit-full'
-                version = 'v1.6'
-
+                version = 'v1.7'
                 artifact("$buildDir/outputs/aar/ffmpeg-kit-full-release.aar")
             }
         }
