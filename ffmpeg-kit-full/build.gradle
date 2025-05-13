@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'maven-publish'
 
 android {
     namespace 'com.auvnet.ffmpeg'
@@ -27,4 +28,17 @@ repositories {
 
 dependencies {
     api(name: 'ffmpeg-kit-full', ext: 'aar')
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+                groupId = 'com.github.AUVNET'
+                artifactId = 'ffmpeg-kit-full'
+                version = 'v1.1'
+            }
+        }
+    }
 }
