@@ -1,1 +1,17 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_PROJECT) // ✅ FIXED
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
 include ':ffmpeg-kit-full'

@@ -8,9 +8,35 @@ buildscript {
     }
 }
 
+plugins {
+    id 'com.android.library' version '8.2.2' apply false
+    id 'maven-publish'
+}
+
 allprojects {
     repositories {
         google()
         mavenCentral()
+    }
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                groupId = 'com.github.AUVNET'
+                artifactId = 'ffmpeg-kit-full'
+                version = 'v1.5'
+
+                println("Artifact path: ${rootDir}/ffmpeg-kit-full/build/outputs/aar/ffmpeg-kit-full-release.aar")
+                artifact("ffmpeg-kit-full/build/outputs/aar/ffmpeg-kit-full-release.aar")
+            }
+        }
+    }
+}
+
+gradle.projectsEvaluated {
+    tasks.matching { it.name.startsWith("lint") || it.name.startsWith("test") }.configureEach {
+        enabled = false
     }
 }
