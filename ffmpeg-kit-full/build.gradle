@@ -26,5 +26,5 @@ repositories {
 }
 
 dependencies {
-    implementation(name: 'ffmpeg-kit-full', ext: 'aar')
+    api(name: 'ffmpeg-kit-full', ext: 'aar')
 }
